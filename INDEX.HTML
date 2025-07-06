@@ -1,0 +1,684 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Store - Premium eBooks for Class 12</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========================================= -->
+    <!-- EBOOK DATA STORAGE - EDIT THIS SECTION -->
+    <!-- ========================================= -->
+    <script type="application/json" id="ebookData">
+    {
+        "books": [
+            {
+                "id": 1,
+                "title": "Mathematics for Class 12",
+                "author": "CHANPREET SINGH",
+                "subject": "mathematics",
+                "description": "Comprehensive guide covering calculus, algebra, trigonometry, and coordinate geometry with solved examples and practice problems.",
+                "fullDescription": "This comprehensive mathematics textbook is designed specifically for Class 12 students preparing for board examinations and competitive tests. It covers all major topics including differential calculus, integral calculus, linear algebra, probability, and statistics. Each chapter includes step-by-step solutions, practice exercises, and real-world applications to help students master complex mathematical concepts.",
+                "price": "Premium",
+                "originalPrice": "₹899",
+                "discountPrice": "₹FREE",
+                "rating": 4.8,
+                "reviews": 1247,
+                "pages": 50,
+                "language": "English",
+                "publisher": "Academic Excellence Publications",
+                "publishYear": 2024,
+                "isbn": "978-81-123-4567-8",
+                "difficulty": "Advanced",
+                "chapters": 18,
+                "features": ["Step-by-step solutions", "Practice exercises", "Previous year questions", "Online support"],
+                "password": "math2024",
+                "downloadLink": "https://drive.google.com/file/d/1QSmxivBkb_lNfWzuCO0HaT51nffMimQa/view?usp=drive_link",
+                "thumbnail": "📚",
+                "previewPages": 25,
+                "downloadCount": 15420,
+                "lastUpdated": "2025-07-05"
+            },
+            {
+                "id": 2,
+                "title": "ACCOUNTANCY CLASS 12TH",
+                "author": "CHANPREET SINGH",
+                "subject": "ACCOUNTANCY",
+                "description": "Complete physics textbook with theoretical concepts, practical applications, and comprehensive problem-solving techniques.",
+                "fullDescription": "A masterpiece in accounts education, this book combines theoretical understanding with practical applications. It covers mechanics, thermodynamics, electromagnetism, optics, and modern physics with detailed explanations, diagrams, and real-world examples. Perfect for students aiming for engineering entrance exams and board examinations.",
+                "price": "Premium",
+                "originalPrice": "₹1299",
+                "discountPrice": "₹899",
+                "rating": 4.9,
+                "reviews": 2156,
+                "pages": 1024,
+                "language": "English",
+                "publisher": "CS ACADEMY",
+                "publishYear": 2025,
+                "isbn": "978-81-765-4321-9",
+                "difficulty": "Intermediate",
+                "chapters": 22,
+                "features": ["Conceptual clarity", "Numerical problems", "Experimental procedures", "JEE/NEET preparation"],
+                "password": "physics123",
+                "downloadLink": "https://drive.google.com/file/d/1xRMb82MR68tqD5yzcXo3xYlJCpZoU-Dz/view?usp=sharing",
+                "thumbnail": "⚛️",
+                "previewPages": 30,
+                "downloadCount": 18750,
+                "lastUpdated": "2024-02-01"
+            },
+            {
+                "id": 3,
+                "title": "MACRO ECONOMICS CLASS 12TH",
+                "author": "CHANPREET SINGH",
+                "subject": "ECONOMICS",
+                "description": "In-depth coverage of organic chemistry reactions, mechanisms, and industrial applications with detailed explanations.",
+                "fullDescription": "This comprehensive organic chemistry textbook provides deep insights into reaction mechanisms, stereochemistry, and synthetic pathways. It includes detailed coverage of hydrocarbons, functional groups, biomolecules, and polymers with emphasis on understanding rather than memorization. Essential for medical and engineering entrance preparations.",
+                "price": "Premium",
+                "originalPrice": "₹1199",
+                "discountPrice": "₹799",
+                "rating": 4.7,
+                "reviews": 987,
+                "pages": 742,
+                "language": "English",
+                "publisher": "CS ACADEMY",
+                "publishYear": 2025,
+                "isbn": "978-81-987-6543-2",
+                "difficulty": "Advanced",
+                "chapters": 16,
+                "features": ["Reaction mechanisms", "3D molecular models", "Industrial applications", "Practice problems"],
+                "password": "chem2024",
+                "downloadLink": "https://your-website.com/chemistry-book.pdf",
+                "thumbnail": "🧪",
+                "previewPages": 20,
+                "downloadCount": 12340,
+                "lastUpdated": "2024-01-20"
+            },
+            {
+                "id": 4,
+                "title": "BUSINESS STUDIES CLASS 12TH",
+                "author": "Dr.CHANPREET SINGH",
+                "subject": "BUSINESS STUDIES",
+                "description": "Comprehensive bUSIENSS STUDIES textbook covering molecular biology, genetics, ecology, and human physiology with modern research.",
+                "fullDescription": "An extensive exploration of life sciences covering cell biology, genetics, evolution, ecology, and human physiology. This textbook integrates classical concepts with modern research findings, making it perfect for students pursuing medical sciences. Includes detailed diagrams, case studies, and current scientific developments.",
+                "price": "Premium",
+                "originalPrice": "₹1099",
+                "discountPrice": "₹749",
+                "rating": 4.6,
+                "reviews": 1456,
+                "pages": 892,
+                "language": "English",
+                "publisher": "CS ACADEMY",
+                "publishYear": 2025,
+                "isbn": "978-81-456-7890-1",
+                "difficulty": "Intermediate",
+                "chapters": 20,
+                "features": ["Detailed diagrams", "Case studies", "Modern research", "NEET preparation"],
+                "password": "bio123",
+                "downloadLink": "https://dropbox.com/s/your-biology-link/biology.pdf",
+                "thumbnail": "🧬",
+                "previewPages": 28,
+                "downloadCount": 14680,
+                "lastUpdated": "2024-01-25"
+            },
+            {
+                "id": 5,
+                "title": "Computer Science with Python",
+                "author": "Reema Thareja",
+                "subject": "computer",
+                "description": "Complete guide to programming with Python, data structures, algorithms, and database management for Class 12 curriculum.",
+                "fullDescription": "A comprehensive guide to computer science fundamentals using Python programming language. Covers object-oriented programming, data structures, algorithms, database management, and web development. Includes practical projects, coding exercises, and real-world applications to build strong programming skills.",
+                "price": "Premium",
+                "originalPrice": "₹999",
+                "discountPrice": "₹699",
+                "rating": 4.8,
+                "reviews": 2034,
+                "pages": 654,
+                "language": "English",
+                "publisher": "Oxford University Press",
+                "publishYear": 2024,
+                "isbn": "978-81-234-5678-9",
+                "difficulty": "Beginner to Intermediate",
+                "chapters": 14,
+                "features": ["Hands-on coding", "Project-based learning", "Industry practices", "Career guidance"],
+                "password": "code2024",
+                "downloadLink": "https://mega.nz/file/your-cs-file-link",
+                "thumbnail": "💻",
+                "previewPages": 35,
+                "downloadCount": 19250,
+                "lastUpdated": "2024-02-05"
+            },
+            {
+                "id": 6,
+                "title": "English Literature & Grammar",
+                "author": "William Shakespeare Collection",
+                "subject": "english",
+                "description": "Comprehensive English literature guide with grammar fundamentals, poetry analysis, and prose comprehension techniques.",
+                "fullDescription": "An extensive collection covering English literature, grammar, and composition skills. Includes analysis of classic works, poetry interpretation, essay writing techniques, and advanced grammar concepts. Perfect for developing strong communication skills and literary appreciation essential for academic and professional success.",
+                "price": "Premium",
+                "originalPrice": "₹799",
+                "discountPrice": "₹549",
+                "rating": 4.5,
+                "reviews": 876,
+                "pages": 598,
+                "language": "English",
+                "publisher": "Macmillan Education",
+                "publishYear": 2024,
+                "isbn": "978-81-345-6789-0",
+                "difficulty": "Intermediate",
+                "chapters": 12,
+                "features": ["Literary analysis", "Grammar exercises", "Writing techniques", "Vocabulary building"],
+                "password": "eng2024",
+                "downloadLink": "https://example.com/english-class12.pdf",
+                "thumbnail": "📖",
+                "previewPages": 22,
+                "downloadCount": 11890,
+                "lastUpdated": "2024-01-30"
+            }
+        ]
+    }
+    </script>
+    <!-- ========================================= -->
+    <!-- END OF EBOOK DATA STORAGE -->
+    <!-- ========================================= -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>CS ACADEMY</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active" onclick="showHome()">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link" onclick="showAbout()">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#contact" class="nav-link" onclick="showContact()">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Premium eBooks for Class 12</h1>
+                        <p class="hero-subtitle">Unlock your academic potential with our comprehensive collection of Class 12 eBooks. Quality education resources at your fingertips.</p>
+                        <div class="hero-cta">
+                            <button class="cta-button" onclick="scrollToBooks()">
+                                <i class="fas fa-book-open"></i>
+                                Explore eBooks
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number" id="heroBookCount">6</div>
+                            <div class="stat-label">Premium eBooks</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Quality Content</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Access</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-header">
+                        <h2>Find Your Perfect Study Material</h2>
+                        <p>Search through our curated collection of Class 12 eBooks</p>
+                    </div>
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search for eBooks by title, author, or subject..." onkeyup="searchBooks()">
+                    </div>
+                    <div class="filter-section">
+                        <div class="filter-label">Filter by Subject:</div>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" onclick="filterBooks('all')">All Subjects</button>
+                            <button class="filter-btn" onclick="filterBooks('mathematics')">Mathematics</button>
+                            <button class="filter-btn" onclick="filterBooks('physics')">ACCOUNTANCY</button>
+                            <button class="filter-btn" onclick="filterBooks('chemistry')">ECONOMICS</button>
+                            <button class="filter-btn" onclick="filterBooks('biology')">BUSINESS STUDIES</button>
+                            <button class="filter-btn" onclick="filterBooks('computer')">Computer Science</button>
+                            <button class="filter-btn" onclick="filterBooks('english')">English</button>
+                        </div>
+                    </div>
+                    <div class="sort-section">
+                        <div class="sort-label">Sort by:</div>
+                        <select id="sortSelect" onchange="sortBooks()" class="sort-dropdown">
+                            <option value="title">Title (A-Z)</option>
+                            <option value="rating">Highest Rated</option>
+                            <option value="price">Price (Low to High)</option>
+                            <option value="downloads">Most Downloaded</option>
+                            <option value="newest">Newest First</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Grid -->
+        <section class="books-section" id="booksSection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Available eBooks</h2>
+                    <p class="section-subtitle">Comprehensive study materials for Class 12 students</p>
+                </div>
+                <div class="books-grid" id="booksGrid">
+                    <!-- Books will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="aboutSection" style="display: none;">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-header">
+                        <h2>About CS ACADEMY</h2>
+                        <p>Your trusted partner in academic excellence</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <h3>Quality Content</h3>
+                            <p>Carefully curated eBooks from renowned authors and publishers, ensuring the highest quality educational content for Class 12 students.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Secure Access</h3>
+                            <p>Protected content with secure password access, ensuring that only authorized users can access premium educational materials.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>24/7 Availability</h3>
+                            <p>Access your eBooks anytime, anywhere. Study at your own pace with our always-available digital library platform.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Academic Excellence</h3>
+                            <p>Designed specifically for Class 12 curriculum, helping students achieve their academic goals and excel in examinations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contactSection" style="display: none;">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-header">
+                        <h2>Get in Touch</h2>
+                        <p>Have questions? We're here to help you succeed</p>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h3>Email Us</h3>
+                                <p>csacademy7000@gmail.com</p>
+                                <p>info@csacademy.com</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <h3>Call Us</h3>
+                                <p>+918384051563</p>
+                                <p>Mon-Fri: 9AM-6PM</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <h3>Visit Us</h3>
+                                <p>123 Education Street</p>
+                                <p>Learning City, shastri nagar</p>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h3>Send us a Message</h3>
+                            <form onsubmit="submitContactForm(event)">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Book Detail Modal -->
+    <div class="modal" id="bookDetailModal">
+        <div class="modal-content book-detail-content">
+            <div class="modal-header">
+                <h3>Book Details</h3>
+                <button class="close-btn" onclick="closeBookDetailModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="book-detail-grid">
+                    <div class="book-detail-left">
+                        <div class="book-cover">
+                            <span id="detailBookThumbnail">📚</span>
+                        </div>
+                        <div class="book-badges">
+                            <span class="badge bestseller" id="detailBestseller">Bestseller</span>
+                            <span class="badge difficulty" id="detailDifficulty">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="book-detail-right">
+                        <h2 id="detailBookTitle">Book Title</h2>
+                        <p class="detail-author">by <span id="detailBookAuthor">Author Name</span></p>
+                        <div class="rating-section">
+                            <div class="stars" id="detailStars"></div>
+                            <span class="rating-text" id="detailRating">4.8</span>
+                            <span class="reviews-count">(<span id="detailReviews">1,247</span> reviews)</span>
+                        </div>
+                        <div class="price-section">
+                            <span class="current-price" id="detailCurrentPrice">₹599</span>
+                            <span class="original-price" id="detailOriginalPrice">₹899</span>
+                            <span class="discount" id="detailDiscount">33% OFF</span>
+                        </div>
+                        <div class="book-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span><span id="detailPages">856</span> Pages</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-language"></i>
+                                <span id="detailLanguage">English</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-download"></i>
+                                <span><span id="detailDownloads">15,420</span> Downloads</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-calendar"></i>
+                                <span id="detailYear">2024</span>
+                            </div>
+                        </div>
+                        <div class="book-features">
+                            <h4>Key Features:</h4>
+                            <ul id="detailFeatures">
+                                <!-- Features will be populated by JavaScript -->
+                            </ul>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary unlock-detail-btn" onclick="openUnlockModalFromDetail()">
+                                <i class="fas fa-unlock"></i>
+                                Unlock eBook
+                            </button>
+                            <button class="btn btn-secondary preview-btn" onclick="previewBook()">
+                                <i class="fas fa-eye"></i>
+                                Preview (<span id="detailPreviewPages">25</span> pages)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-description-section">
+                    <h3>About this Book</h3>
+                    <p id="detailFullDescription">Full description will be loaded here...</p>
+                </div>
+                <div class="book-info-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="showTab('details')">Details</button>
+                        <button class="tab-btn" onclick="showTab('contents')">Contents</button>
+                        <button class="tab-btn" onclick="showTab('reviews')">Reviews</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="detailsTab" class="tab-pane active">
+                            <div class="detail-info-grid">
+                                <div class="info-item">
+                                    <strong>Publisher:</strong>
+                                    <span id="detailPublisher">CS ACADEMY</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>ISBN:</strong>
+                                    <span id="detailISBN">978-81-123-4567-8</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>Chapters:</strong>
+                                    <span id="detailChapters">18</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>Last Updated:</strong>
+                                    <span id="detailLastUpdated">June 15, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="contentsTab" class="tab-pane">
+                            <div class="contents-preview">
+                                <h4>Table of Contents</h4>
+                                <div id="tableOfContents">
+                                    <!-- Table of contents will be generated based on chapters -->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="reviewsTab" class="tab-pane">
+                            <div class="reviews-section">
+                                <div class="review-summary">
+                                    <div class="rating-breakdown">
+                                        <div class="rating-bar">
+                                            <span>5 ⭐</span>
+                                            <div class="bar"><div class="fill" style="width: 75%"></div></div>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="rating-bar">
+                                            <span>4 ⭐</span>
+                                            <div class="bar"><div class="fill" style="width: 20%"></div></div>
+                                            <span>20%</span>
+                                        </div>
+                                        <div class="rating-bar">
+                                            <span>3 ⭐</span>
+                                            <div class="bar"><div class="fill" style="width: 3%"></div></div>
+                                            <span>3%</span>
+                                        </div>
+                                        <div class="rating-bar">
+                                            <span>2 ⭐</span>
+                                            <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                            <span>1%</span>
+                                        </div>
+                                        <div class="rating-bar">
+                                            <span>1 ⭐</span>
+                                            <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                                            <span>1%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sample-reviews">
+                                    <div class="review-item">
+                                        <div class="reviewer-info">
+                                            <strong>Rahul S.</strong>
+                                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p>"Excellent book with clear explanations and comprehensive coverage. Highly recommended for Class 12 students."</p>
+                                    </div>
+                                    <div class="review-item">
+                                        <div class="reviewer-info">
+                                            <strong>Priya M.</strong>
+                                            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                        </div>
+                                        <p>"The step-by-step solutions and practice problems are incredibly helpful. Great value for money!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Password Modal -->
+    <div class="modal" id="passwordModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Unlock Premium eBook</h3>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="book-preview">
+                    <div class="book-thumbnail" id="modalBookThumbnail">📚</div>
+                    <div class="book-info">
+                        <h4 id="modalBookTitle"></h4>
+                        <p class="book-author" id="modalBookAuthor"></p>
+                        <p class="book-subject" id="modalBookSubject"></p>
+                    </div>
+                </div>
+                <div class="password-form">
+                    <label for="passwordInput">Enter Access Password:</label>
+                    <input type="password" id="passwordInput" placeholder="Enter book password" onkeypress="handlePasswordKeyPress(event)">
+                    <div class="modal-actions">
+                        <button class="btn btn-primary" onclick="checkPassword()">
+                            <i class="fas fa-unlock"></i>
+                            Unlock eBook
+                        </button>
+                        <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    </div>
+                </div>
+                <div class="error-message" id="errorMessage"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-content">
+            <div class="modal-header">
+                <h3>Access Granted!</h3>
+                <button class="close-btn" onclick="closeSuccessModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>eBook Unlocked Successfully!</h4>
+                <p>You can now view your premium eBook and start studying.</p>
+                <div class="modal-actions">
+                    <button class="btn btn-success" id="viewPdfBtn">
+                        <i class="fas fa-eye"></i>
+                        View PDF
+                    </button>
+                    <button class="btn btn-secondary" onclick="closeSuccessModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>CS Store</span>
+                    </div>
+                    <p>Your trusted partner for Class 12 educational resources. Empowering students to achieve academic excellence through quality digital content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" onclick="showHome()">Home</a></li>
+                        <li><a href="#about" onclick="showAbout()">About Us</a></li>
+                        <li><a href="#contact" onclick="showContact()">Contact</a></li>
+                        <li><a href="#" onclick="scrollToBooks()">eBooks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Subjects</h4>
+                    <ul>
+                        <li><a href="#" onclick="filterBooks('mathematics')">Mathematics</a></li>
+                        <li><a href="#" onclick="filterBooks('physics')">Physics</a></li>
+                        <li><a href="#" onclick="filterBooks('chemistry')">Chemistry</a></li>
+                        <li><a href="#" onclick="filterBooks('biology')">Biology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@csstore.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Education Street, Learning City</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CS Store. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
